@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    section {
+        border: 1px solid rebeccapurple;
+        margin: 0 0 10px 0;
+    }
+    p {
+        margin: 0;
+    }
+    footer {
+        border: 1px solid olivedrab;
+    }
+    img {
+        width: 100px;
+    }
+    .clearfix::after {
+        content: "Woa this is a clearfix";
+        display: block;
+        height: 0;
+        /*visibility: hidden;*/
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <section class="clearfix">
+        <img src="pen.jpeg" alt="">
+        <p>This is my pen</p>
+    </section>
+    <footer>
+        This is the footer element of this example.
+    </footer>
+</body>
+</html>
