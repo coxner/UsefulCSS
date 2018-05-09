@@ -77,11 +77,11 @@ One of the most common ways to clear floats is CSS today is using a clearfix.
 
 ## Menus
 
-The first file _simpleMenu.html_ displays a simple vertical menu. By default li tags `display:block` so they will **stack vertically**. Another default to be aware of is that <a> tags are `display:inline` therefore shrink wrapping the content. By changing the display to block we are causing the <a> tag to extend and fill its whole parent making the whole area clickable not just the words themselves.
+The first file _simpleMenu.html_ displays a simple vertical menu. By default li tags `display:block` so they will **stack vertically**. Another default to be aware of is that `<a>` tags are `display:inline` therefore shrink wrapping the content. By changing the display to block we are causing the `<a>` tag to extend and fill its whole parent making the whole area clickable not just the words themselves.
 
 The last think I want you to look at is the use of the child selector. The cool thing about this slector here is we are applying styles to all the the <a> tags except the first.
 
-**Horizontal Menu** To get the menu to display horizontally all we have to do is float the <li> elements to the left. We also float its parent element (<ul>) to make sure it encapsulates the <li> tags. To see this is action try removing `float:left` from ``list1 ul` and view the changes in the browser dev tools.
+**Horizontal Menu** To get the menu to display horizontally all we have to do is float the `<li>` elements to the left. We also float its parent element (`<ul>`) to make sure it encapsulates the `<li>` tags. To see this is action try removing `float:left` from `list1 ul` and view the changes in the browser dev tools.
 
 **Drop Down Menu**
-The first thing to look at in _dropDown.html_ is the markup. We create the main nav items with a <ul>. From there with select the <li> tags we want a dropdown menu to come from. Within that <li> tag we create another unordered list.
+The first thing to look at in _dropDown.html_ is the markup. We create the main nav items with a `<ul>`. From there with select the `<li>` tags we want a dropdown menu to come from. Within that `<li>` tag we create another unordered list which will hold the `<li>` tags for the drop down menu. This can be seen a lot better then I can explain in the dropdown file.
