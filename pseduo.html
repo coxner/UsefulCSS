@@ -24,6 +24,7 @@
             font-variant: small-caps;
             /* remove the line below and watch what color I become */
             color: red;
+            font-style: 
         }
         /* General Sibiling Selector */
         /* Change me to a h2 and watch what happend */
@@ -49,9 +50,9 @@
         }
         /* Active Psuedo Class */ 
         a:active {
-            color:purple;
+            color: white;
         }
-        #more_info:target {background: red;}
+        #target_me:target {background: red;}
         
         ul {
             background-color: blue;
@@ -85,14 +86,16 @@
 </head>
 <body>
     <section>
-        <a href="#more_info">Want to see a :target pseudo class in use CLICK ME</a>
+        <!--Assigning the href an id --> 
+        <a href="#target_me">Want to see a :target pseudo class in use CLICK ME</a>
         <h2>This is a H2</h2>
         <p>This is a paragraph. I take the style of a adjacent sibiling</p>
         <h3>Woah isnt the section * class cool</h3>
         <p>This is another paragraph notice how the paragraph above is different from me I am affected by the 
             general sibiling selector <a href="#">Link</a></p>
         <a href="#">Link</a>
-        <h2 id="more_info">This is the info you were looking for</h2>
+         <!--Reusing the href id to target this element --> 
+        <h2 id="target_me">This is the info you were looking for</h2>
         <ul>
             <li>1</li>
             <li>2</li>
