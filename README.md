@@ -85,3 +85,7 @@ The last think I want you to look at is the use of the child selector. The cool 
 
 **Drop Down Menu**
 The first thing to look at in _dropDown.html_ is the markup. We create the main nav items with a `<ul>`. From there with select the `<li>` tags we want a dropdown menu to come from. Within that `<li>` tag we create another unordered list which will hold the `<li>` tags for the drop down menu. This can be seen a lot better then I can explain in the dropdown file.
+
+Next all the styling has been applied to the `<a>` to ensure that the hot area (area user can click) is maximized. Another cool CSS style we see used for the first time is the `background-clip: box-padding` which only highlights the background of the `a` tags to the padding not the border. Read more
+
+By setting the `li` tags to `position: relative` it allows us to postion the drop down menu for it absolutely. In doing this we set `top:100%` which ensures it sits directly at the bottom edge of its parent. The space between the two is caused from border top styling. Try changing the top value from 100% and see what happens. Also switch `left:0` to `right:0` and watch how the position of the nested `<ul>` changes.
